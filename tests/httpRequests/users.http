@@ -12,3 +12,27 @@ Content-Type: application/json
   "isMerried":true,
   "workExperience": 2
 }
+
+### 200 {}
+
+GET http://localhost:5000/api/users?limit=2&skip=1
+
+
+### 200 {}
+
+GET http://localhost:5000/api/users/65bfb4b98f78c3d93b668251
+
+
+### 200 {}
+
+PATCH http://localhost:5000/api/users/65bfb4b98f78c3d93b668251
+Content-Type: application/json
+
+{
+  "firstName":"Test",
+  "workExperience": 3
+}
+
+### 204 {}
+
+DELETE http://localhost:5000/api/users/65bfb78947967bec71ed83cc
