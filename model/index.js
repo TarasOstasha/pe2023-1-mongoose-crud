@@ -6,3 +6,5 @@ mongoose
   .connect(`mongodb://${host}:${port}/${dbName}`)
   .then(() => console.log('DB connection OK'))
   .catch(err => console.log('err :>> ', err));
+
+module.exports.User = require('./user');
