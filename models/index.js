@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const env = process.env.NODE_ENV ?? 'development';
-const { host, port, dbName } = require('./../config/mongoConfigs.json')[env];
+const { host, port, dbName } = require('../config/mongoConfigs.json')[env];
 
 mongoose
   .connect(`mongodb://${host}:${port}/${dbName}`)
@@ -8,3 +8,4 @@ mongoose
   .catch(err => console.log('err :>> ', err));
 
 module.exports.User = require('./user');
+module.exports.Post = require('./post');

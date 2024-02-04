@@ -36,3 +36,14 @@ Content-Type: application/json
 ### 204 {}
 
 DELETE http://localhost:5000/api/users/65bfb78947967bec71ed83cc
+
+POST http://localhost:5000/api/users/65bfb4b98f78c3d93b668251/posts
+Content-Type: application/json
+
+{
+  "body":"Some new post 4"
+}
+
+GET http://localhost:5000/api/users/65bfb4b98f78c3d93b668251/posts
+
+GET http://localhost:5000/api/posts

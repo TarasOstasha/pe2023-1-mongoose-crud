@@ -1,6 +1,5 @@
 const http = require('http');
 const app = require('./app');
-require('./model');
 
 const PORT = process.env.PORT ?? 5000;
 
