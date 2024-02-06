@@ -1,0 +1,32 @@
+### 201 {}
+POST http://localhost:5000/api/phones
+Content-Type: application/json
+
+{
+    "model": "Iphone14",
+    "brand": "Apple",
+    "yearManufactured": "2023-09-15",
+    "core": "Applecore",
+    "isFNC": "true",
+    "ram": "64gb",
+    "serialNumber": "3c141",
+    "color": "black" 
+}
+### 200 {}
+GET http://localhost:5000/api/phones
+
+### 200 {}
+GET http://localhost:5000/api/phones/65c1994e6c5e3a93fbc60ec2
+
+### 200 {}
+GET http://localhost:5000/api/phones/65c1994e6c5e3a93fbc60ec2
+Content-Type: application/json
+
+{
+  "model":"Iphone11",
+  "color": "silver"
+}
+
+### 204 {}
+
+DELETE http://localhost:5000/api/phones/65c1994e6c5e3a93fbc60ec2
