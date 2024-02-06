@@ -4,10 +4,10 @@ POST http://localhost:5000/api/users
 Content-Type: application/json
 
 {
-  "firstName":"Test",
+  "firstName":"Testtt",
   "lastName":"Testovych",
   "email":"t@t.com",
-  "birthday":"2000-01-01",
+  "birthday":"2001-01-01",
   "gender": "male",
   "isMerried":true,
   "workExperience": 2
@@ -16,6 +16,10 @@ Content-Type: application/json
 ### 200 {}
 
 GET http://localhost:5000/api/users?limit=2&skip=1
+
+### 200 {}
+
+GET http://localhost:5000/api/users
 
 
 ### 200 {}
@@ -47,3 +51,28 @@ Content-Type: application/json
 GET http://localhost:5000/api/users/65bfb4b98f78c3d93b668251/posts
 
 GET http://localhost:5000/api/posts
+
+### 204 {}
+
+POST http://localhost:5000/api/users/65c1988ab0906140ee2ef503/phones
+Content-Type: application/json
+
+{
+    "model": "Iphone10",
+    "brand": "Apple",
+    "yearManufactured": "2012-09-15",
+    "core": "Applecore",
+    "isFNC": "true",
+    "ram": "64gb",
+    "serialNumber": "3c141",
+    "color": "black" 
+}
+
+### 200 {}
+
+GET http://localhost:5000/api/users/65c1988ab0906140ee2ef503/phones
+
+### 200 {}
+
+GET http://localhost:5000/api/phones
+

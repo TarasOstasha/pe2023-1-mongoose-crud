@@ -19,4 +19,14 @@ userRouter
   .post(userController.createUserPost)
   .get(userController.getUserPosts);
 
+
+// POST /api/users/1/phones
+// GET /api/users/1/phones
+userRouter
+  .route('/:userId/phones')
+  .post(userController.createUserPhone)
+  .get(userController.getUserPhones);
+
+
+
 module.exports = userRouter;
