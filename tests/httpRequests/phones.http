@@ -19,7 +19,7 @@ GET http://localhost:5000/api/phones
 GET http://localhost:5000/api/phones/65c1994e6c5e3a93fbc60ec2
 
 ### 200 {}
-GET http://localhost:5000/api/phones/65c1994e6c5e3a93fbc60ec2
+PATCH http://localhost:5000/api/phones/65c1a92778b2bc600325c685
 Content-Type: application/json
 
 {
